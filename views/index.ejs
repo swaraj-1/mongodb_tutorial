@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #b6bcc3;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button.register-btn {
+            margin-right: 10px;
+        }   
+        button.login-btn {
+            margin-left: 10px;
+        }
+
+               
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the My App</h1>
+        <button class="register-btn" onclick="navigate('./register')">Register</button>
+        <button class="login-btn" onclick="navigate('./login')">Log In</button>
+    </div>
+    <script>
+        function navigate(route) {
+            window.location.href = route;
+        }
+    </script>
+</body>
+</html>
